@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Landing Page</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Main Section */
+        main {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .cta {
+            background: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        .cta h2 {
+            margin-bottom: 1rem;
+        }
+
+        .cta a {
+            color: #fff;
+            padding: 0.8rem 2rem;
+            background: #e74c3c;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .cta a:hover {
+            background: #c0392b;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .feature-box {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem 0;
+            flex-basis: calc(33.333% - 1rem);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .feature-box h3 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .feature-box p {
+            color: #666;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+
+            .feature-box {
+                flex-basis: 100%;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+     
+    <header>
+        <h1>Welcome to Our Landing Page</h1>
+        <p>Your success starts here. Join us today!</p>
+    </header>
+
+     
+    <main>
+         
+        <section class="cta">
+            <h2>Get Started Today</h2>
+            <a href="#signup">Sign Up Now</a>
+        </section>
+
+         
+        <section class="features">
+            <div class="feature-box">
+                <h3>Feature One</h3>
+                <p> Expert-Led Courses & Resources :
+                    We offer a wide range of expert-led courses and resources designed to help you succeed. Whether you're looking to develop new skills or enhance existing ones, we provide comprehensive training to guide your journey.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Feature Two</h3>
+                <p> Tailored Solutions for Every Need :
+                    Personalized learning paths and tools that adapt to your specific goals. Our platform ensures that your experience is customized to support your unique success, whether you're a beginner or an expert.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Feature Three</h3>
+                <p> Join a Thriving Community :
+                    Become part of a global community of like-minded individuals focused on growth and success. Share ideas, collaborate on projects, and gain support from a network of peers and mentors.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Your Company. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
